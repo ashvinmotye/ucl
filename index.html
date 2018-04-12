@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hello, I'm Ashvin, student at University of Mauritius. I enjoy coding, love cycling and share my life experiences on my blog.">
+  <meta name="keywords" content="UCL draw simulator, unseeded UCL draw simulator, ashvin, motye, ashvin motye, web developer mauritius, software developer mauritius">
+
+  <title>UCL Draw Simulator | Ashvin Motye</title>
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112790540-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112790540-1');
+  </script>
+</head>
+<body>
+  
+  <div class="container">
+
+    <div class="potForm">
+
+      <h1>UCL Draw Simulator</h1>
+
+      <form id="potForm" onsubmit="return false;">
+
+        <div class="inputs">
+
+          <input type="text" name="teamName" placeholder="team name">
+
+          <input type="submit" value="+" title="Add to pot">
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="pot">
+
+      <h2>Currently in pot</h2>
+
+      <ul id="potTeams"></ul>
+
+    </div>
+
+    <div class="draw">
+
+      <div class="buttons">
+
+        <button type="button" id="shuffle">Shuffle &#38; Draw</button>
+
+      </div>
+
+      <div id="results"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
